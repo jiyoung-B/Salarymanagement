@@ -3,8 +3,8 @@
 
 def myinput(employee) :
     sal_no = input("사원번호 : ")
-    sal_level = input("급수 : ")
-    sal_ho = input("호 : ")
+    sal_level = int(input("급수 : "))
+    sal_ho = int(input("호 : "))
     sal_sudang = int(input("수당 : "))
     employee['sal_no'] = sal_no
     employee['sal_level'] = sal_level
