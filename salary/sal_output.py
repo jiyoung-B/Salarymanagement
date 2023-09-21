@@ -4,6 +4,6 @@
 def myoutput (employee) :
     print("                          <<급여 관리 프로그램>>                          ")
     print("-------------------------------------------------------------------------")
-    print("   사번     급수     호      수당      지급액       세금        차인지급액")
+    print("사번\t급수\t호\t수당\t지급액\t세금\t차인지급액")
     print("-------------------------------------------------------------------------")
-    print(f"   {employee['sal_no']}\t\t{employee['sal_level']} \t{employee['sal_ho']}\t{employee['sal_sudang']}\t{employee['sal_payment']}\t\t{employee['sal_tax']}\t{employee['sal_tot_payment']}")
+    print(f"{employee['sal_no']}\t{employee['sal_level']}\t{employee['sal_ho']}\t{employee['sal_sudang']}\t{employee['sal_payment']}\t{employee['sal_tax']}\t{employee['sal_tot_payment']}")
