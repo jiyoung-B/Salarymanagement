@@ -2,7 +2,7 @@
 # sal_no sal_level sal_ho sal_sudang sal_payment sal_tax
 # sal_tot_payment
 
-def calc(employee) :
+def mycalc(employee) :
     sal = None
     sal_level = employee["sal_level"]
     sal_ho = employee["sal_ho"]
