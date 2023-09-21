@@ -42,6 +42,7 @@ def mycalc(employee) :
     # 세율과 조정액을 정의합니다.
     tax_rate = 0
     sal_diff = 0
+    sal_payment = sal + sal_sudang
     
     if 70000 <= sal_payment < 80000:
         tax_rate = 0.005
@@ -53,7 +54,13 @@ def mycalc(employee) :
         tax_rate = 0.012
         sal_diff = 1000
         
-    sal_payment = sal + sal_sudang
+    
+    
     sal_tax = (sal_payment * tax_rate) - sal_diff
     sal_tot_payment = sal_payment - sal_tax
+    employee['sal_payment'] = sal_payment
+    employee['sal_tot_payment'] = sal_tot_payment
+    employee['sal_tax'] = sal_tax
+    
+    
     
